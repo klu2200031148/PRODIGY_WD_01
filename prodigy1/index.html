@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navbar</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"> </script>
+</head>
+<body>
+    <header>
+        <nav>
+        <div class="menu">
+        <a href="#" class="logo">LOGO</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Team">Team</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+        </div>
+        </nav>
+          <h1> Welcome to our website!</h1>
+    </header>
+    <section id="About">About</section>
+    <section id="Services">Services</section>
+    <section id="Team">Team</section>
+    <section id="Contact">Contact</section>
+   
+<div class="description">
+    <p>
+    Experience our website's interactive navigation menu, crafted to elevate your browsing journey.
+    Scroll effortlessly through pages and witness the menu's dynamic color changes, enhancing user engagement.
+    Hover over menu items to see instant style transformations, reflecting our attention to detail.
+    With a fixed position, our navigation menu remains accessible on every page, ensuring smooth navigation.
+    Explore our services, learn about our mission, and reach out to us with ease, thanks to our intuitive menu design.
+    Join us on a seamless browsing adventure, where navigation meets innovation.
+    </p>
+</div>
+
+    <script type="text/javascript">
+        function changeHeaderText(pageName) {
+    document.getElementById('landingPageTitle').innerText = pageName;
+}
+        $(window).on("scroll",function(){
+            if($(window).scrollTop()){
+                $('nav').addClass('black');
+            }
+            else{
+                $('nav').removeClass('black');
+            }
+        })
+    
+    
+    </script>
+</body>
+</html>
